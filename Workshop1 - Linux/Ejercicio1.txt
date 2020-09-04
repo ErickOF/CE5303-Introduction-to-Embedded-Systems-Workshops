@@ -1,0 +1,14 @@
+Encabezado:
+Erick Andrés Obregón Fonseca
+2016123157
+
+Solución del ejercicio1:
+jue  3 sep 20:01:47 CST 2020
+erickof
+5.4.0-45-generic
+erickof  22853  0.0  0.0  29860  2360 pts/1    Ss+  10:07   0:00 /bin/bash
+erickof  23039  0.0  0.0  30056  4632 pts/2    Ss   10:08   0:00 /bin/bash
+erickof  28186  0.0  0.0  30056  3932 pts/2    S+   20:01   0:00 /bin/bash
+erickof  28190  0.0  0.0  44340  3588 pts/2    R+   20:01   0:00 ps -u
+erickof  28191  0.0  0.0  19020  1052 pts/2    S+   20:01   0:00 grep erickof
+erickof  32325  0.0  0.0  29780  5148 pts/3    Ss+  12:07   0:00 /bin/bash
