@@ -1,0 +1,127 @@
+[    0.007445] check: Scanning 1 areas for low memory corruption
+[    0.007896]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.007901] Early memory node ranges
+[    0.008121]   DMA zone: 64 pages used for memmap
+[    0.008121]   DMA zone: 21 pages reserved
+[    0.008122]   DMA zone: 3995 pages, LIFO batch:0
+[    0.040108] Reserving Intel graphics memory at [mem 0x9b800000-0x9f7fffff]
+[    0.040289] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.040290] PM: Registered nosave memory: [mem 0x0009c000-0x0009cfff]
+[    0.040290] PM: Registered nosave memory: [mem 0x0009d000-0x0009ffff]
+[    0.040290] PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+[    0.040291] PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+[    0.040291] PM: Registered nosave memory: [mem 0x90fb2000-0x90fb2fff]
+[    0.040292] PM: Registered nosave memory: [mem 0x90fb3000-0x98521fff]
+[    0.040292] PM: Registered nosave memory: [mem 0x98522000-0x9855ffff]
+[    0.040292] PM: Registered nosave memory: [mem 0x98560000-0x98eabfff]
+[    0.040293] PM: Registered nosave memory: [mem 0x98eac000-0x9f7fffff]
+[    0.040293] PM: Registered nosave memory: [mem 0x9f800000-0xdfffffff]
+[    0.040293] PM: Registered nosave memory: [mem 0xe0000000-0xefffffff]
+[    0.040294] PM: Registered nosave memory: [mem 0xf0000000-0xfdffffff]
+[    0.040294] PM: Registered nosave memory: [mem 0xfe000000-0xfe010fff]
+[    0.040294] PM: Registered nosave memory: [mem 0xfe011000-0xfebfffff]
+[    0.040295] PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+[    0.040295] PM: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+[    0.040295] PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[    0.040296] PM: Registered nosave memory: [mem 0xfee01000-0xfeffffff]
+[    0.040296] PM: Registered nosave memory: [mem 0xff000000-0xffffffff]
+[    0.081383] Memory: 7828640K/8133940K available (14339K kernel code, 2379K rwdata, 4928K rodata, 2704K init, 5020K bss, 305300K reserved, 0K cma-reserved)
+[    0.122124] Freeing SMP alternatives memory: 40K
+[    0.131928] x86/mm: Memory block size: 128MB
+[    0.233754] ACPI: bus type USB registered
+[    0.233795] usbcore: registered new device driver usb
+[    0.911235] Freeing initrd memory: 63208K
+[    0.925619] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.925989] check: Scanning for low memory corruption every 60 seconds
+[    0.955581] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.955596] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.955606] uhci_hcd: USB Universal Host Controller Interface driver
+[    0.955964] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+[    0.958312] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.04
+[    0.958313] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.958314] usb usb1: Product: xHCI Host Controller
+[    0.958314] usb usb1: Manufacturer: Linux 5.4.0-45-generic xhci-hcd
+[    0.958315] usb usb1: SerialNumber: 0000:00:14.0
+[    0.958431] hub 1-0:1.0: USB hub found
+[    0.967916] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+[    0.967917] xhci_hcd 0000:00:14.0: Host supports USB 3.0 SuperSpeed
+[    0.967943] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.04
+[    0.967944] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.967944] usb usb2: Product: xHCI Host Controller
+[    0.967945] usb usb2: Manufacturer: Linux 5.4.0-45-generic xhci-hcd
+[    0.967945] usb usb2: SerialNumber: 0000:00:14.0
+[    0.968026] hub 2-0:1.0: USB hub found
+[    0.990992] Freeing unused decrypted memory: 2040K
+[    0.991462] Freeing unused kernel image memory: 2704K
+[    1.050290] Freeing unused kernel image memory: 2008K
+[    1.050629] Freeing unused kernel image memory: 1216K
+[    1.233195] [TTM] Zone  kernel: Available graphics memory: 3949928 KiB
+[    1.233196] [TTM] Zone   dma32: Available graphics memory: 2097152 KiB
+[    1.233199] [TTM] Initializing DMA pool allocator
+[    1.233212] [drm] radeon: 2048M of VRAM memory ready
+[    1.233212] [drm] radeon: 2048M of GTT memory ready.
+[    1.305553] usb 1-5: new high-speed USB device number 2 using xhci_hcd
+[    1.481975] usb 1-5: New USB device found, idVendor=0bda, idProduct=5769, bcdDevice=52.68
+[    1.481976] usb 1-5: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+[    1.481977] usb 1-5: Product: Integrated_Webcam_HD
+[    1.481978] usb 1-5: Manufacturer: CN0F08KGLOG0083FA6NFA02
+[    1.481978] usb 1-5: SerialNumber: 200901010001
+[    1.495180] sd 0:0:0:0: [sda] 1953525168 512-byte logical blocks: (1.00 TB/932 GiB)
+[    1.495181] sd 0:0:0:0: [sda] 4096-byte physical blocks
+[    1.495264] sd 0:0:0:0: [sda] Write Protect is off
+[    1.495265] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    1.495285] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.609685] usb 1-6: new high-speed USB device number 3 using xhci_hcd
+[    1.632411]  sda: sda1 sda2 sda3 sda4 sda5 sda6 sda7
+[    1.633413] sd 0:0:0:0: [sda] Attached SCSI disk
+[    1.762325] usb 1-6: New USB device found, idVendor=0bda, idProduct=0129, bcdDevice=39.60
+[    1.762326] usb 1-6: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    1.762327] usb 1-6: Product: USB2.0-CRW
+[    1.762327] usb 1-6: Manufacturer: Generic
+[    1.762328] usb 1-6: SerialNumber: 20100201396000000
+[    1.889550] usb 1-7: new full-speed USB device number 4 using xhci_hcd
+[    2.171377] usb 1-7: New USB device found, idVendor=0cf3, idProduct=e009, bcdDevice= 0.01
+[    2.171378] usb 1-7: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[   15.214827] idma64 idma64.0: Found Intel integrated DMA 64-bit
+[   17.426969] USB Video Class driver (1.1.1)
+[  144.360301] Bluetooth: RFCOMM TTY layer initialized
+[22558.786655] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[22558.873538] sd 0:0:0:0: [sda] Stopping disk
+[22560.454262] PM: Saving platform NVS memory
+[22560.475054] PM: Restoring platform NVS memory
+[22560.977436] sd 0:0:0:0: [sda] Starting disk
+[22561.225926] usb 1-6: reset high-speed USB device number 3 using xhci_hcd
+[22561.501902] usb 1-5: reset high-speed USB device number 2 using xhci_hcd
+[22561.778020] usb 1-7: reset full-speed USB device number 4 using xhci_hcd
+[23048.531992] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[23048.685428] sd 0:0:0:0: [sda] Stopping disk
+[23050.192981] PM: Saving platform NVS memory
+[23050.212877] PM: Restoring platform NVS memory
+[23050.761927] sd 0:0:0:0: [sda] Starting disk
+[23051.007297] usb 1-5: reset high-speed USB device number 2 using xhci_hcd
+[23051.287292] usb 1-6: reset high-speed USB device number 3 using xhci_hcd
+[23051.563008] usb 1-7: reset full-speed USB device number 4 using xhci_hcd
+[30772.266492] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[30772.307610] sd 0:0:0:0: [sda] Stopping disk
+[30773.956835] PM: Saving platform NVS memory
+[30773.978573] PM: Restoring platform NVS memory
+[30774.480148] sd 0:0:0:0: [sda] Starting disk
+[30774.725951] usb 1-6: reset high-speed USB device number 3 using xhci_hcd
+[30775.001763] usb 1-7: reset full-speed USB device number 4 using xhci_hcd
+[30775.277688] usb 1-5: reset high-speed USB device number 2 using xhci_hcd
+[34467.134799] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[34467.149737] sd 0:0:0:0: [sda] Stopping disk
+[34468.782580] PM: Saving platform NVS memory
+[34468.801143] PM: Restoring platform NVS memory
+[34469.112538] sd 0:0:0:0: [sda] Starting disk
+[34469.465910] usb 1-5: reset high-speed USB device number 2 using xhci_hcd
+[34469.742018] usb 1-7: reset full-speed USB device number 4 using xhci_hcd
+[34470.017982] usb 1-6: reset high-speed USB device number 3 using xhci_hcd
+[75795.123339] sd 0:0:0:0: [sda] Synchronizing SCSI cache
+[75795.345298] sd 0:0:0:0: [sda] Stopping disk
+[75796.775228] PM: Saving platform NVS memory
+[75796.793831] PM: Restoring platform NVS memory
+[75797.105219] sd 0:0:0:0: [sda] Starting disk
+[75797.354239] usb 1-5: reset high-speed USB device number 2 using xhci_hcd
+[75797.630593] usb 1-7: reset full-speed USB device number 4 using xhci_hcd
+[75797.906572] usb 1-6: reset high-speed USB device number 3 using xhci_hcd
