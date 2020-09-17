@@ -22,8 +22,8 @@ build-w-slib:
 
 	@echo "Completed"
 
-	@gcc -o $(MAIN) $(MAIN).c $(LIB_BUILD).a -lm
-	@./$(MAIN)
+	@gcc -o $(MAIN)_s $(MAIN).c $(LIB_BUILD).a -lm
+	@./$(MAIN)_s
 
 build-w-dlib:
 	@echo "Building dynamic library"
@@ -37,5 +37,5 @@ build-w-dlib:
 
 	@echo "Completed"
 
-	@gcc -o $(MAIN) $(MAIN).c -I$(LIB_DIR) -L$(LIB_DIR) -Bdynamic ./$(LIB_BUILD).so -lm
-	@./$(MAIN)
+	@gcc -o $(MAIN)_d $(MAIN).c -I$(LIB_DIR) -L$(LIB_DIR) -Bdynamic ./$(LIB_BUILD).so -lm
+	@./$(MAIN)_d
