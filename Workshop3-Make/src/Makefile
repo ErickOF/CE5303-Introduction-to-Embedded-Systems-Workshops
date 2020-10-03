@@ -1,20 +1,26 @@
-.PONY: build-w-slib build-w-dlib
+.PONY: build-slib build-dlib
 
-LIB_DIR=../include
-BUILD_DIR=../lib
+
+CC=gcc
+LIB_DIR=../lib
 BIN_DIR=../bin
+HEADER_DIR=-I../include
+LDIR=-L$(LIB_DIR)
 LIB_BUILD=liboperaciones
+DBUILD=$(CURDIR)/$(LIB_DIR)/$(LIB_BUILD).so
+SLIB=$(LIB_DIR)/$(LIB_BUILD).a
 MAIN=calculadora
+MAINC=calculadora.c
+MAIND=$(BIN_DIR)/calculadora_d
+MAINE=$(BIN_DIR)/calculadora_e
+FLAGS=-lm
+BFLAGS=-Bdynamic
 
 
-build-w-slib:
-	@echo "Building app with static library..."
+build-slib:
 	@[ -d $(BIN_DIR) ] || mkdir $(BIN_DIR)
-	@gcc -o $(BIN_DIR)/$(MAIN)_e $(MAIN).c $(BUILD_DIR)/$(LIB_BUILD).a -lm
-	@echo "Completed"
+	@$(CC) -o $(MAINE) $(MAINC) $(SLIB) $(FLAGS)
 
-build-w-dlib:
-	@echo "Building app with dynamic library..."
+build-dlib:
 	@[ -d $(BIN_DIR) ] || mkdir $(BIN_DIR)
-	@gcc -o $(BIN_DIR)/$(MAIN)_d $(MAIN).c -I$(LIB_DIR) -L$(BUILD_DIR) -Bdynamic $(CURDIR)/$(BUILD_DIR)/$(LIB_BUILD).so -lm
-	@echo "Completed"
+	@$(CC) -o $(MAIND) $(MAINC) $(HEADER_DIR) $(LDIR) $(BFLAGS) $(DBUILD) $(FLAGS)

@@ -1,36 +1,28 @@
 .PONY: build-slib build-dlib
 
 
+CC=gcc
 LIB_DIR=../include
 LIB_FILE=operaciones
+CFILE=$(LIB_FILE).c
+OUTPUT_FILE=$(LIB_FILE).o
 LIB_BUILD=liboperaciones
+DLIB=$(LIB_BUILD).so
+SLIB=$(LIB_BUILD).a
 MAIN=calculadora
 
 
 build-slib:
-	@echo "Building static library..."
+	@$(CC) -c $(CFILE)
 
-	@# Creating object code
-	@gcc -c $(LIB_FILE).c
+	@ar rv $(SLIB) $(OUTPUT_FILE)
+	@rm $(OUTPUT_FILE)
 
-	@# Creating library
-	@ar rv $(LIB_BUILD).a $(LIB_FILE).o
-	@rm $(LIB_FILE).o
-
-	@ranlib $(LIB_BUILD).a
-
-	@nm -s $(LIB_BUILD).a
-
-	@echo "Completed"
+	@ranlib $(SLIB)
+	@nm -s $(SLIB)
 
 build-dlib:
-	@echo "Building dynamic library..."
+	@$(CC) -c $(CFILE)
 
-	@# Creating object code
-	@gcc -c $(LIB_FILE).c
-
-	@# Creating library
-	@ld -o $(LIB_BUILD).so $(LIB_FILE).o -shared -lm
-	@rm $(LIB_FILE).o
-
-	@echo "Completed"
+	@ld -o $(DLIB) $(OUTPUT_FILE) -shared -lm
+	@rm $(OUTPUT_FILE)
