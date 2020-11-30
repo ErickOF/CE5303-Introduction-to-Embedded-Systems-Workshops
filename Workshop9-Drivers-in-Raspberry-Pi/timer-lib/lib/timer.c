@@ -22,7 +22,15 @@ void read_file(char* str, int N)
 
 double generate_random_number(double high, double low)
 {
-    return 0.0;
+    char* data = (char*) calloc(2, sizeof(char));
+    read_file(data, 2);
+    
+    int number = *data;
+    double rand_num = number % (int)(high - low) + low;
+    
+    free(data);
+
+    return rand_num;
 }
 
 double get_time()
